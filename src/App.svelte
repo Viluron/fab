@@ -1,18 +1,26 @@
 <script lang="ts">
   import HeaderBar from './components/layout/HeaderBar.svelte';
   import BuildCanvas from './components/layout/BuildCanvas.svelte';
-  import ComponentToolbox from './components/layout/ComponentToolbox.svelte';
+  import ComponentToolbox from './components/layout/BuilderToolbox/ComponentToolbox.svelte';
+	import ComponentSettings from './components/layout/ComponentSettings.svelte';
+	import BuilderToolbox from './components/layout/BuilderToolbox.svelte';
 
   const appTitle = "Fast App Builder"
 </script>
 
 <main class="w100 h100">
   <HeaderBar title={appTitle}/>
-  <ComponentToolbox/>
-  <BuildCanvas/>
+  <div class="builder-content flex-row">
+    <BuilderToolbox/>
+    <BuildCanvas/>
+    <ComponentSettings />
+
+  </div>
 </main>
 
 <style lang="less">
-
+.builder-content {
+  height: calc(100% - 4em);
+}
 
 </style>

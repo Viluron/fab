@@ -1,5 +1,8 @@
 <script lang="ts">
-    import ComponentTile from "./ComponentTile.svelte";
+    import Toolbox from "../../fabUiComponents/Toolbox.svelte";
+import ComponentTile from "./ComponentTile.svelte";
+
+    export let height = "unset";
 
     let components = [
         {
@@ -35,17 +38,15 @@
 
 </script>
 
-<section class="flex-column toolbox">
-    <slot>
-        {#each components as comp}
-            <ComponentTile title={comp.name} description={comp.description} compId={comp.id}/>
-        {/each}
-    </slot>
-</section>
+<template>
+    <Toolbox title="Components" {height}>
+        <slot>
+            {#each components as comp}
+                <ComponentTile title={comp.name} description={comp.description} compId={comp.id}/>
+            {/each}
+        </slot>
+    </Toolbox>
+</template>
 
 <style lang="less">
-    .toolbox {
-        height: 100%;
-        width: 10em;
-    }
 </style>

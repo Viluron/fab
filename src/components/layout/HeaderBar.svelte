@@ -20,4 +20,21 @@
 </template>
 
 <style lang="less">
+	.header-bar {
+		height: 4em;
+
+		section {
+			&:nth-child(1) {
+				background-color: red;
+			}
+
+			&:nth-child(2) {
+				background-color: blue;
+			}
+
+			&:nth-child(3) {
+				background-color: yellow;
+			}
+		}
+	}
 </style>

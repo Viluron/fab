@@ -11,7 +11,7 @@
     .build-canvas {
         background-color: var(--secondary-color);
         height: 100%;
-        width: 20rem;
+        width: 60%;
     }
 
 
