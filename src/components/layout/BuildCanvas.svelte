@@ -9,9 +9,12 @@
 
 <style lang="less">
     .build-canvas {
-        background-color: var(--secondary-color);
         height: 100%;
         width: 60%;
+        border-width: 1px;
+        border-color: var(--bg-color-light);
+        border-left-style: solid;
+        border-right-style: solid;
     }
 
 

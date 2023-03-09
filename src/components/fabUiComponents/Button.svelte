@@ -30,6 +30,7 @@
 
 		&:hover {
 			cursor: pointer;
+			filter: saturate(0.7);
 		}
 	}
 
@@ -51,6 +52,10 @@
 		background-color: transparent;
 		border-color: var(--secondary-color);
 		color: var(--secondary-color);
+
+		&:hover {
+			color: var(--green4);
+		}
 	}
 
 	.transparent {

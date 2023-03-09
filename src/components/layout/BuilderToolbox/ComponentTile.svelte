@@ -18,12 +18,11 @@
 <style lang="less">
     .comp {
         width: 10em;
-        background-color: lightgray;
         border-radius: 5px;
         transition: 0.3s;
-    }
 
-    .comp:hover {
-        background-color: lightslategray;
+        &:hover {
+            background-color: var(--hover-color);
+        }
     }
 </style>
