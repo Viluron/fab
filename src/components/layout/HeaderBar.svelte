@@ -9,7 +9,7 @@
 <template>
 	<div class="header-bar w100 flex">
 		<section class="flex-centered w25 flex-justify-start">
-			<Button icon="home" />
+			<Button icon="home" type="ghost"/>
 		</section>
 		<section class="w50 flex-centered">
 			<h1>{title}</h1>
@@ -22,19 +22,8 @@
 <style lang="less">
 	.header-bar {
 		height: 4em;
-
-		section {
-			&:nth-child(1) {
-				background-color: red;
-			}
-
-			&:nth-child(2) {
-				background-color: blue;
-			}
-
-			&:nth-child(3) {
-				background-color: yellow;
-			}
-		}
+		border-width: 1px;
+        border-color: var(--bg-color-light);
+        border-bottom-style: solid;
 	}
 </style>

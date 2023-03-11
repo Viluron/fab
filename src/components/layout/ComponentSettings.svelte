@@ -20,6 +20,5 @@
 <style lang="less">
 .component-settings {
 	width: 20%;
-	background: navy;
 }
 </style>

@@ -13,7 +13,6 @@
 
 <style lang="less">
 	.builder-toolbox {
-		background: pink;
 		width: 20%;
 	}
 </style>

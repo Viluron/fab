@@ -19,6 +19,12 @@
 </main>
 
 <style lang="less">
+
+  main {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: sans-serif;
+  }
 .builder-content {
   height: calc(100% - 4em);
 }
